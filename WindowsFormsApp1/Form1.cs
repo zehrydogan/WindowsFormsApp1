@@ -42,7 +42,6 @@ namespace WindowsFormsApp1
             }
         }
 
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox6.Text) || string.IsNullOrEmpty(textBox7.Text) || string.IsNullOrEmpty(textBox6.Text))
@@ -56,10 +55,7 @@ namespace WindowsFormsApp1
                 x2 = Convert.ToDouble(textBox2.Text);
                 y2 = Convert.ToDouble(textBox4.Text);
                 s1 = ((y1- y2) / (x1 - x2));
-                else
-                {
-                    if (((x1==x3) && (y1==y3)) && ((x2 == x4) && (y2== y4)))
-                        textBox9.Text = ("Bu doğrular çakışık paraleldir.");
+                
                 textBox9.Text = Convert.ToString(s1);
                 x3 = Convert.ToDouble(textBox5.Text);
                 y3 = Convert.ToDouble(textBox7.Text);
@@ -74,15 +70,17 @@ namespace WindowsFormsApp1
                 else if (((x1 == x2 && y1 == y2)))
                     textBox9.Text = ("1. ve 2.koordinatlar doğru oluşturmamaktadır!!");
 
-
+                else
+                {
+                    if (((x1 == x3) && (y1 == y3)) && ((x2 == x4) && (y2 == y4)))
+                        textBox9.Text = ("Bu doğrular çakışık paraleldir.");
 
                     else if ((x1 / x2) / (x3 / x4) == (y1 / y2) / (y3 / y4))
                         textBox9.Text = ("Bu doğrular paraleldir.");
 
                     else
                     {
-                        if ((s1 * s2 == -1))
-
+                        if ((s1 * s2) == -1)
                             textBox9.Text = ("Bu doğrular diktir.");
                         else 
                             textBox9.Text = ("Bu doğrular kesişiktir.");
