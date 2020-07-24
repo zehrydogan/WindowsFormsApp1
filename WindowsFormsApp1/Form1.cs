@@ -53,19 +53,19 @@ namespace WindowsFormsApp1
                 y1 = Convert.ToDouble(textBox3.Text);
                 x2 = Convert.ToDouble(textBox2.Text);
                 y2 = Convert.ToDouble(textBox4.Text);
-                s1 = (y2 - y1 / x2 - x1);
+                s1 = ((y2 - y1) /( x2 - x1));
                 textBox9.Text = Convert.ToString(s1);
                 x3 = Convert.ToDouble(textBox5.Text);
                 y3 = Convert.ToDouble(textBox7.Text);
                 x4 = Convert.ToDouble(textBox6.Text);
                 y4 = Convert.ToDouble(textBox8.Text);
-                s2 = (y4 - y3 / x4 - x3);
+                s2 = ((y4 - y3 )/( x4 - x3));
                 textBox9.Text = Convert.ToString(s2);
-                if (s1 * s2 == -1)
+                if ((s1 * s2) == -1)
                 {
                     textBox9.Text = ("Bu doğrular diktir.");
                 }
-                else if (s1 * s2 != -1)
+                else if ((s1 * s2 )!= -1)
                 {
                     textBox9.Text = ("Bu doğrular kesişiktir.");
                 }
