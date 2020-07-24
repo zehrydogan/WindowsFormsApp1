@@ -36,10 +36,15 @@ namespace WindowsFormsApp1
         //birer tane olarak da nokta olmamalı
         private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 && e.KeyChar != 47)) && e.KeyChar != 8)))
+            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 )) && e.KeyChar != 8)))
             {
                 e.Handled = true;
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -91,49 +96,49 @@ namespace WindowsFormsApp1
         }
         private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 && e.KeyChar != 47)) && e.KeyChar != 8)))
+            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 )) && e.KeyChar != 8)))
             {
                 e.Handled = true;
             }
         }
         private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 && e.KeyChar != 47)) && e.KeyChar != 8)))
+            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 )) && e.KeyChar != 8)))
             {
                 e.Handled = true;
             }
         }
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 && e.KeyChar != 47)) && e.KeyChar != 8)))
+            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 )) && e.KeyChar != 8)))
             {
                 e.Handled = true;
             }
         }
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 && e.KeyChar != 47)) && e.KeyChar != 8)))
+            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44)) && e.KeyChar != 8)))
             {
                 e.Handled = true;
             }
         }
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 && e.KeyChar != 47)) && e.KeyChar != 8)))
+            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44)) && e.KeyChar != 8)))
             {
                 e.Handled = true;
             }
         }
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 && e.KeyChar != 47)) && e.KeyChar != 8)))
+            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44)) && e.KeyChar != 8)))
             {
                 e.Handled = true;
             }
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 && e.KeyChar != 47)) && e.KeyChar != 8)))
+            if (((((!char.IsDigit(e.KeyChar) && e.KeyChar != 45 && e.KeyChar != 44 )) && e.KeyChar != 8)))
             {
                 e.Handled = true;
             }
